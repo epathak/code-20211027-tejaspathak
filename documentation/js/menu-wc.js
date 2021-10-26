@@ -57,13 +57,13 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="classes/AppModule.html" data-type="entity-link" >AppModule</a>
                             </li>
                             <li class="link">
+                                <a href="classes/BmiController.html" data-type="entity-link" >BmiController</a>
+                            </li>
+                            <li class="link">
+                                <a href="classes/BmiModule.html" data-type="entity-link" >BmiModule</a>
+                            </li>
+                            <li class="link">
                                 <a href="classes/LogComponent.html" data-type="entity-link" >LogComponent</a>
-                            </li>
-                            <li class="link">
-                                <a href="classes/SampleController.html" data-type="entity-link" >SampleController</a>
-                            </li>
-                            <li class="link">
-                                <a href="classes/SampleModule.html" data-type="entity-link" >SampleModule</a>
                             </li>
                         </ul>
                     </li>
@@ -75,6 +75,12 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             <span class="icon ion-ios-arrow-down"></span>
                         </div>
                         <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
+                            <li class="link">
+                                <a href="interfaces/BmiInput.html" data-type="entity-link" >BmiInput</a>
+                            </li>
+                            <li class="link">
+                                <a href="interfaces/BmiOutput.html" data-type="entity-link" >BmiOutput</a>
+                            </li>
                             <li class="link">
                                 <a href="interfaces/Controller.html" data-type="entity-link" >Controller</a>
                             </li>

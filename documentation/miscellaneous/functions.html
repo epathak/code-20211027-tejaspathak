@@ -59,13 +59,19 @@
                 <td class="col-md-4">
                     <ul class="index-list">
                         <li>
+                            <a href="#computeBmi" title="src/bmiComponent/bmi.module.ts" ><b>computeBmi</b>&nbsp;&nbsp;&nbsp;(src/.../bmi.module.ts)</a>
+                        </li>
+                        <li>
+                            <a href="#computeBmiCategoryAndHealthRisk" title="src/bmiComponent/bmi.module.ts" ><b>computeBmiCategoryAndHealthRisk</b>&nbsp;&nbsp;&nbsp;(src/.../bmi.module.ts)</a>
+                        </li>
+                        <li>
                             <a href="#initialiseEnvironment" title="src/server.ts" ><b>initialiseEnvironment</b>&nbsp;&nbsp;&nbsp;(src/.../server.ts)</a>
                         </li>
                         <li>
                             <a href="#loadEnvFromJsonFile" title="src/server.ts" ><b>loadEnvFromJsonFile</b>&nbsp;&nbsp;&nbsp;(src/.../server.ts)</a>
                         </li>
                         <li>
-                            <a href="#parseExpressRequest" title="src/sampleComponent/sample.controller.ts" ><b>parseExpressRequest</b>&nbsp;&nbsp;&nbsp;(src/.../sample.controller.ts)</a>
+                            <a href="#parseExpressRequest" title="src/bmiComponent/bmi.controller.ts" ><b>parseExpressRequest</b>&nbsp;&nbsp;&nbsp;(src/.../bmi.controller.ts)</a>
                         </li>
                         <li>
                             <a href="#safeReadJsonFile" title="src/server.ts" ><b>safeReadJsonFile</b>&nbsp;&nbsp;&nbsp;(src/.../server.ts)</a>
@@ -77,7 +83,153 @@
     </table>
 </section>
 
-    <h3>src/server.ts</h3>
+    <h3>src/bmiComponent/bmi.module.ts</h3>
+    <section>
+    <h3></h3>    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="computeBmi"></a>
+                    <span class="name">
+                        <span ><b>computeBmi</b></span>
+                        <a href="#computeBmi"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>computeBmi(weight: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, height: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A general purpose function which returns the BMI.
+Todo: Could be moved later to a library for reuse.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>weight</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>height</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="computeBmiCategoryAndHealthRisk"></a>
+                    <span class="name">
+                        <span ><b>computeBmiCategoryAndHealthRisk</b></span>
+                        <a href="#computeBmiCategoryAndHealthRisk"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>computeBmiCategoryAndHealthRisk(bmi: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>A general purpose function which returns the BMI related parameters.
+Todo: Could be moved later to a library for reuse.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bmi</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>string[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>    <h3>src/server.ts</h3>
     <section>
     <h3></h3>    <table class="table table-sm table-bordered">
         <tbody>
@@ -250,7 +402,7 @@ Also handles the file read related errors like &quot;file does not exist&quot;.<
             </tr>
         </tbody>
     </table>
-</section>    <h3>src/sampleComponent/sample.controller.ts</h3>
+</section>    <h3>src/bmiComponent/bmi.controller.ts</h3>
     <section>
     <h3></h3>    <table class="table table-sm table-bordered">
         <tbody>
@@ -265,7 +417,7 @@ Also handles the file read related errors like &quot;file does not exist&quot;.<
             </tr>
             <tr>
                 <td class="col-md-4">
-<code>parseExpressRequest(req: Request)</code>
+<code>parseExpressRequest(req: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                 </td>
             </tr>
 
@@ -292,7 +444,7 @@ Also handles the file read related errors like &quot;file does not exist&quot;.<
                                 <tr>
                                     <td>req</td>
                                     <td>
-                                            <code>Request</code>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                     </td>
 
                                     <td>
