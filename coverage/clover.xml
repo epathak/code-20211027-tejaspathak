@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1635281244603" clover="3.2.0">
-  <project timestamp="1635281244603" name="All files">
+<coverage generated="1635281857935" clover="3.2.0">
+  <project timestamp="1635281857936" name="All files">
     <metrics statements="13" coveredstatements="11" conditionals="13" coveredconditionals="9" methods="5" coveredmethods="5" elements="31" coveredelements="25" complexity="0" loc="13" ncloc="13" packages="1" files="1" classes="1"/>
     <file name="bmi.module.ts" path="/Users/tp/Development/code-20211027-tejaspathak/src/bmiComponent/bmi.module.ts">
       <metrics statements="13" coveredstatements="11" conditionals="13" coveredconditionals="9" methods="5" coveredmethods="5"/>
