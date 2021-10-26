@@ -87,4 +87,5 @@ test('sample test', () => {
       "HealthRisk": "Enhanced risk"
     }
   ]);
+  expect(response.data.filter((d:any)=>d.BMICategory === 'Overweight').length).toBe(1);
 });
