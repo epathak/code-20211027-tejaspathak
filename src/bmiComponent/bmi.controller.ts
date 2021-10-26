@@ -31,13 +31,14 @@ export class BmiController {
     this.router = Router();
 
     const configs = [
-      { method: 'get', route: '/', handler: bmiModule.sayHelloWorld }
+      { method: 'post', route: '/', handler: bmiModule.getBmiDetails }
     ];
 
     configs.forEach((config: any) => {
       (this.router as any)[config.method](config.route, async (req: any, res: any) => {
         const requestDetails = parseExpressRequest(req);
         const { status, data } = await config.handler(requestDetails);
+
         res.status(status).send(data);
       })
     })
