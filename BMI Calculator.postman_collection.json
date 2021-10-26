@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "1442dfee-5659-4b1a-8d9d-4c4da1f7b9ec",
+		"name": "BMI Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get records with BMI computed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"Gender\": \"Male\",\n    \"HeightCm\": 171,\n    \"WeightKg\": 96\n  },\n  {\n    \"Gender\": \"Male\",\n    \"HeightCm\": 161,\n    \"WeightKg\": 85\n  },\n  {\n    \"Gender\": \"Male\",\n    \"HeightCm\": 180,\n    \"WeightKg\": 77\n  },\n  {\n    \"Gender\": \"Female\",\n    \"HeightCm\": 166,\n    \"WeightKg\": 62\n  },\n  {\n    \"Gender\": \"Female\",\n    \"HeightCm\": 150,\n    \"WeightKg\": 70\n  },\n  {\n    \"Gender\": \"Female\",\n    \"HeightCm\": 167,\n    \"WeightKg\": 82\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/bmi",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"bmi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
